@@ -1,0 +1,30 @@
+projection implementation in class ZBP_C_HAR_PROJECT unique;
+strict ( 2 );
+extensible;
+use draft;
+use side effects;
+define behavior for ZC_HAR_PROJECT alias ZcHarProject
+extensible
+use etag
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+
+  use association _Usr { create; with draft; }
+
+}
+
+define behavior for ZC_PROJ_USERS
+{
+  use update;
+  use delete;
+  use association _proj { with draft; }
+
+}

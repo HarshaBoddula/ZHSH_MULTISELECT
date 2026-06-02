@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZR_HAR_PROJECT'
+@MappingRole: true
+define role ZR_HAR_PROJECT {
+  grant select on ZR_HAR_PROJECT
+  where TRUE;
+}

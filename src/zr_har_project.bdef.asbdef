@@ -1,0 +1,69 @@
+managed implementation in class ZBP_R_HAR_PROJECT unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_HAR_PROJECT alias ZrHarProject
+persistent table ZHAR_PROJECT
+extensible
+draft table ZHAR_PROJECT_D
+etag master Locallastchangedat
+lock master total etag Lastchangedat
+authorization master( global )
+{
+  field ( mandatory : create )
+   ProjID;
+
+  field ( readonly )
+   Localcreatedby,
+   Localcreatedat,
+   Locallastchangedby,
+   Locallastchangedat,
+   Lastchangedat;
+
+  field ( readonly : update )
+   ProjID;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  association _Usr { create; with draft; }
+
+  mapping for ZHAR_PROJECT corresponding extensible
+  {
+    ProjID = PROJ_ID;
+    Name = NAME;
+    Uname = UNAME;
+    Localcreatedby = LOCALCREATEDBY;
+    Localcreatedat = LOCALCREATEDAT;
+    Locallastchangedby = LOCALLASTCHANGEDBY;
+    Locallastchangedat = LOCALLASTCHANGEDAT;
+    Lastchangedat = LASTCHANGEDAT;
+  }
+
+}
+
+define behavior for ZI_PROJ_USERS
+persistent table zhar_users1
+draft table zhar_users1_d
+lock dependent by _proj
+authorization dependent by _proj
+{
+  update;
+  delete;
+  field ( readonly ) ProjId;
+
+  association _proj { with draft; }
+
+  mapping for ZHAR_USERS1 {
+    ProjId = proj_id;
+    Uname = uname;
+  }
+}

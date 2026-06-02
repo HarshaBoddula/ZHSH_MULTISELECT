@@ -1,0 +1,117 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'ProjID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'ProjID'
+annotate view ZC_HAR_PROJECT with
+{
+  @EndUserText.label: 'ProjID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'ProjID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'ProjID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  ProjID;
+  
+  @EndUserText.label: 'Name'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Name'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Name;
+  
+  @EndUserText.label: 'Uname'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Uname'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Uname'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Uname;
+  
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  @UI.lineItem: [ {
+    position: 40 
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Localcreatedby;
+  
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  @UI.lineItem: [ {
+    position: 50 
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Localcreatedat;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Locallastchangedby;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  Locallastchangedat;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  Lastchangedat;
+  
+  @UI  : { lineItem:       [ { label: 'User list' ,position: 90, importance: #HIGH, value: '_Usr.Uname' }
+                 ] }
+  @UI.identification: [{ label: 'User list' ,position: 90, importance: #HIGH, value: '_Usr.Uname' }]
+  _Usr;
+  
+}

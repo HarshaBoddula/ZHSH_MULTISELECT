@@ -1,0 +1,13 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_HAR_PROJECT'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_HAR_PROJECT'
+  }
+}
+define service ZUI_HAR_PROJECT_O4
+  provider contracts odata_v4_ui {
+  expose ZC_HAR_PROJECT;
+  expose ZC_PROJ_USERS;
+}

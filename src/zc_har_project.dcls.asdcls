@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_HAR_PROJECT'
+@MappingRole: true
+define role ZC_HAR_PROJECT {
+  grant select on ZC_HAR_PROJECT
+  where INHERITING CONDITIONS FROM ENTITY ZR_HAR_PROJECT REPLACING { ROOT WITH _BaseEntity };
+}
