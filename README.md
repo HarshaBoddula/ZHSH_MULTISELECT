@@ -36,11 +36,14 @@ define table zhar_project {
 
 Step 2: Generate ABAP Repository Objects
  
+<img width="974" height="759" alt="image" src="https://github.com/user-attachments/assets/a3f3ca69-6230-43ef-a2cb-cb2d0bae5fa0" />
 
- 
+<img width="975" height="1210" alt="image" src="https://github.com/user-attachments/assets/feee41d0-307f-4026-8662-7e33183cd58d" />
+
 
 Once objects are created publish the service
- 
+ <img width="975" height="609" alt="image" src="https://github.com/user-attachments/assets/f3d9ca76-c940-4cb6-8be7-c14fb01d0f6c" />
+
 
 
 ________________________________________
@@ -276,16 +279,17 @@ ________________________________________
  
 ________________________________________
 🔹 Final Output
-✔ Create Project
- 
-✔ Add multiple users
- 
-✔ Value help selection
- 
+<img width="975" height="573" alt="image" src="https://github.com/user-attachments/assets/fd1aa0ad-2d57-4d01-970a-611d967aaf0f" />
 
-________________________________________
-📸 Final Screenshot Placeholder
-👉 Working Multi-Select Scenario (Object Page)
+✔ Create Project
+ <img width="975" height="494" alt="image" src="https://github.com/user-attachments/assets/b6fd5897-83f8-43de-9155-326e6869c706" />
+
+✔ Add multiple users
+ <img width="975" height="501" alt="image" src="https://github.com/user-attachments/assets/6ba36c47-0973-4d47-8a41-e7f6170c599c" />
+
+✔ Value help selection
+ <img width="975" height="508" alt="image" src="https://github.com/user-attachments/assets/6054ffdb-0fc1-43bd-86b4-f0b22dc076ab" />
+
 ________________________________________
 ✅ Key Learnings
 •	Multi-select is not field-based in RAP
@@ -294,4 +298,3 @@ ________________________________________
 •	Behavior definition controls lifecycle
 •	Draft ensures transactional consistency
 
- 
